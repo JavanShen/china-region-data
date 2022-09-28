@@ -1,6 +1,7 @@
 import json from "@rollup/plugin-json";
 import typescript from "@rollup/plugin-typescript";
 import alias from "@rollup/plugin-alias";
+import clear from "rollup-plugin-clear"
 import pkg from "./package.json";
 export default {
   input: "src/main.ts",
@@ -28,5 +29,8 @@ export default {
     alias({
       entries: [{ find: "@", replacement: "./src" }],
     }),
+    clear({
+      targets: ['dist']
+    })
   ],
 };

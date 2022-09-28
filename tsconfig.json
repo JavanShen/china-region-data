@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["ESNext","DOM","DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "allowJs": true,
     "removeComments": true,
     "noImplicitAny": true,
@@ -14,11 +14,13 @@
     "baseUrl": "./",
     "strict": true,
     "paths": {
-      "@/*":["src/*"]
-    }
+      "@/*": ["src/*"]
+    },
+    "plugins": [
+      {"transform": "typescript-transform-paths"},
+      {"transform": "typescript-transform-paths", "afterDeclarations": true}
+    ]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }

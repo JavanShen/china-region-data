@@ -5,6 +5,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "umd": "dist/index.umd.js",
+  "types": "dist/types/main.d.ts",
   "scripts": {
     "clear:dist": "rimraf dist",
     "build": "npm run build:types && rollup -c",

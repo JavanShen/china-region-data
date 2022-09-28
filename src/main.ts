@@ -1,0 +1,1 @@
+export {province, city, county} from './data'

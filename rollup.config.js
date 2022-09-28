@@ -1,5 +1,6 @@
 import json from "@rollup/plugin-json";
 import typescript from "@rollup/plugin-typescript";
+import alias from '@rollup/plugin-alias'
 import pkg from "./package.json";
 export default {
   input: "src/main.ts",
@@ -10,5 +11,9 @@ export default {
       format: "umd",
     },
   ],
-  plugins: [json(), typescript({ lib: ["es5", "es6", "dom"], target: "es5" })],
+  plugins: [json(), typescript({ lib: ["es5", "es6", "dom"], target: "es5" }), alias({
+    entries: [
+      {find: '@', replacement: './src'}
+    ]
+  })],
 };

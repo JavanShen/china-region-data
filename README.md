@@ -4,7 +4,9 @@
 
 + 省市区关联数据
 
-+ 支持ts类型提示
++ 支持TS类型提示
+
++ 通过数据关联测试
 
 ### 安装
 
@@ -14,7 +16,7 @@ npm i china-region-data
 
 ### 数据格式
 
-[省份数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/province.ts)
+[省份数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/province.json)
 
 ```js
 const province = [
@@ -28,7 +30,7 @@ const province = [
 ]
 ```
 
-[市级数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/city.ts)
+[市级数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/city.json)
 
 ```js
 const city = {
@@ -48,7 +50,7 @@ const city = {
 }
 ```
 
-[地区数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/county.ts)
+[地区数据](https://raw.githubusercontent.com/JavanShen/china-region-data/master/src/data/county.json)
 
 ```js
 const country = {
@@ -62,6 +64,8 @@ const country = {
             //行政区划代码
             id: '330521000000'
         }
-    ]
+        //...
+    ],
+    //...
 }
 ```

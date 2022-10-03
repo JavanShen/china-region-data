@@ -1,10 +1,10 @@
 name: CI
-# Event设置为main分支的pull request事件和push事件，
+# Event设置为master分支的pull request事件和push事件，
 on:
   push:
-    branches: main
+    branches: master
   pull_request:
-    branches: main
+    branches: master
 jobs:
   # 只需要定义一个job并命名为CI
   CI:

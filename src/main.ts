@@ -1,1 +1,3 @@
-export {province, city, county} from './data'
+export { default as province } from "@/region/province";
+export { default as city } from "@/region/city";
+export { default as county } from "@/region/county";

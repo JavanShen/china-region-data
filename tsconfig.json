@@ -3,6 +3,9 @@
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": [
+      "jest"
+    ],
     "allowJs": true,
     "removeComments": true,
     "noImplicitAny": true,
@@ -10,6 +13,7 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "baseUrl": "./",
     "strict": true,
@@ -21,6 +25,6 @@
       {"transform": "typescript-transform-paths", "afterDeclarations": true}
     ]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts","tests/**/*.ts"],
   "exclude": ["node_modules"]
 }

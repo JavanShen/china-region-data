@@ -1,5 +1,7 @@
 ## 中国省市区数据
 
+[![CI](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/china-region-data)](https://www.npmjs.com/package/china-region-data)
+
 ### 特性
 
 + 省市区关联数据

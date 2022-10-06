@@ -1,6 +1,6 @@
 {
   "name": "china-region-data",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "中国省市区数据",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

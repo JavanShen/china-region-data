@@ -8,10 +8,11 @@
   "types": "dist/main.d.ts",
   "scripts": {
     "clear:dist": "rimraf dist",
-    "build": "rimraf ./dist && rollup -c",
+    "build": "npm run build:types && rollup -c",
+    "build:types": "npm run clear:dist && tsc -b ./tsconfig.types.json",
     "test": "jest",
     "prepare": "ts-patch install -s",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "sideEffects": false,
   "author": "apine",

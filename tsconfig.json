@@ -3,9 +3,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "types": [
-      "jest"
-    ],
+    "types": ["jest"],
     "allowJs": true,
     "removeComments": true,
     "noImplicitAny": true,
@@ -13,6 +11,10 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "rootDir": "src",
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "baseUrl": "./",
@@ -21,10 +23,10 @@
       "@/*": ["src/*"]
     },
     "plugins": [
-      {"transform": "typescript-transform-paths"},
-      {"transform": "typescript-transform-paths", "afterDeclarations": true}
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
     ]
   },
-  "include": ["src/**/*.ts","tests/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules"]
 }

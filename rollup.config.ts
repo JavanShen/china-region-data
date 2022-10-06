@@ -1,6 +1,7 @@
 import json from "@rollup/plugin-json";
 import typescript from "@rollup/plugin-typescript";
 import alias from "@rollup/plugin-alias";
+import {terser} from 'rollup-plugin-terser'
 import pkg from "./package.json";
 export default {
   input: "src/main.ts",
@@ -27,6 +28,7 @@ export default {
     typescript({ lib: ["es5", "es6", "dom"], target: "es5" }),
     alias({
       entries: [{ find: "@", replacement: "./src" }],
-    })
+    }),
+    terser()
   ],
 };

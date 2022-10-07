@@ -1,6 +1,6 @@
 ## 中国省市区数据
 
-[![CI](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/china-region-data)](https://www.npmjs.com/package/china-region-data)
+[![CI](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/JavanShen/china-region-data/actions/workflows/ci.yml) [![codecov](https://codecov.io/github/JavanShen/china-region-data/branch/master/graph/badge.svg?token=AB7MTDP447)](https://codecov.io/github/JavanShen/china-region-data) [![npm](https://img.shields.io/npm/v/china-region-data)](https://www.npmjs.com/package/china-region-data)
 
 ### 特性
 

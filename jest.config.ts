@@ -21,7 +21,7 @@ export default {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    "src/region/**/*.{t,j}s?(x)",
+    "src/**/*.{t,j}s?(x)",
     "!<rootDir>/node_modules/"
   ],
 

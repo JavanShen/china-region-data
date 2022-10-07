@@ -15,6 +15,13 @@
 ```shell
 npm i china-region-data
 ```
+### 使用方式
+
+```TypeScript
+import { province, city, county } from 'china-region-data'
+
+//do something
+```
 
 ### 数据格式
 

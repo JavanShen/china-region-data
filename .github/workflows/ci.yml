@@ -46,5 +46,5 @@ jobs:
         # 通过package.js定义的命令行执行自动化测试
         run: npm run test
       # 上传覆盖率报告至codecov
-      _ name: Upload coverage to Codecov
+      - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3

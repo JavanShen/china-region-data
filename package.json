@@ -14,6 +14,9 @@
     "prepare": "ts-patch install -s",
     "prepublishOnly": "npm run test && npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "author": "apine",
   "license": "ISC",

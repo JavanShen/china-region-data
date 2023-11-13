@@ -27,7 +27,7 @@
   "keywords": ["china","region","data","collection"],
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.9",
-    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-babel": "^6.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-typescript": "^8.5.0",
     "@types/jest": "^29.1.1",
